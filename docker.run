@@ -1,0 +1,13 @@
+#!/usr/bin/bash
+
+set -x
+
+docker stop    symfony-ws301d
+docker rm   -f symfony-ws301d
+docker run                         \
+    --name symfony-ws301d          \
+    --hostname symfony-ws301d      \
+    -v $PWD/symfony:/var/www/html  \
+    -p 8301:80                     \
+    -dti                           \
+    shinsenter/symfony
