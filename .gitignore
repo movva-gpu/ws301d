@@ -1,0 +1,13 @@
+
+###> symfony/framework-bundle ###
+symfony/.env*
+symfony/config/secrets/prod/prod.decrypt.private.php
+symfony/public/bundles/
+symfony/var/
+symfony/vendor/
+###< symfony/framework-bundle ###
+
+###> symfony/asset-mapper ###
+symfony/public/assets/
+symfony/assets/vendor/
+###< symfony/asset-mapper ###
