@@ -1,0 +1,150 @@
+$cl-black:   #171717;
+$cl-white:  #fff;
+$cl-yellow: #fd0;
+$cl-purple: #8F3BC3;
+
+$fonts: (
+    (
+        name: "Inter",
+        src: "/assets/fonts/Inter_18pt-BlackItalic.ttf",
+        weight: 900,
+        italic: true,
+    ),
+    (
+        name: "Inter",
+        src: "/assets/fonts/Inter_18pt-Black.ttf",
+        weight: 900,
+        italic: false,
+    ),
+    // (
+    //     name: "Inter_24pt",
+    //     src: "/assets/fonts/Inter_24pt-BlackItalic.ttf",
+    //     weight: 400,
+    //     italic: true,
+    // ),
+    // (
+    //     name: "Inter_24pt",
+    //     src: "/assets/fonts/Inter_24pt-Black.ttf",
+    //     weight: 400,
+    //     italic: false,
+    // ),
+    // (
+    //     name: "Inter",
+    //     src: "/assets/fonts/Inter-Italic-VariableFont_opsz,wght.ttf",
+    //     weight: 400,
+    //     italic: true,
+    // ),
+    // (
+    //     name: "Inter",
+    //     src: "/assets/fonts/Inter-VariableFont_opsz,wght.ttf",
+    //     weight: 400,
+    //     italic: false,
+    // ),
+    (
+        name: "Lexend",
+        src: "/assets/fonts/Lexend-Bold.ttf",
+        weight: 700,
+        italic: false,
+    ),
+    (
+        name: "Lexend",
+        src: "/assets/fonts/Lexend-SemiBold.ttf",
+        weight: 600,
+        italic: false,
+    ),
+    // (
+    //     name: "Lexend",
+    //     src: "/assets/fonts/Lexend-VariableFont_wght.ttf",
+    //     weight: 400,
+    //     italic: false,
+    // ),
+    (
+        name: "Poppins",
+        src: "/assets/fonts/Poppins-Italic.ttf",
+        weight: 400,
+        italic: true,
+    ),
+    (
+        name: "Poppins",
+        src: "/assets/fonts/Poppins-LightItalic.ttf",
+        weight: 300,
+        italic: true,
+    ),
+    (
+        name: "Poppins",
+        src: "/assets/fonts/Poppins-Light.ttf",
+        weight: 300,
+        italic: false,
+    ),
+    (
+        name: "Poppins",
+        src: "/assets/fonts/Poppins-Regular.ttf",
+        weight: 400,
+        italic: false,
+    ),
+);
+
+@include font-face-gen($fonts);
+
+$ff-sans:  Poppins, system-ui, sans-serif;
+%font-sans {
+    font-size:   1em;
+    font-weight: 400;
+    font-family: $ff-sans;
+}
+
+$ff-intro: Inter, system-ui, sans-serif;
+%font-intro {
+    font-size:   1.8em;
+    font-weight: 900;
+    font-family: $ff-intro;
+}
+
+$ff-nav:   Inter, system-ui, sans-serif;
+%font-nav {
+    font-size:   1.2em;
+    font-weight: 900;
+    font-family: $ff-nav;
+}
+
+$ff-h1:    Lexend, system-ui, sans-serif;
+%font-h1 {
+    font-size:   3.2em;
+    font-weight: 600;
+    font-family: $ff-h1;
+}
+
+$ff-h2:    Lexend, system-ui, sans-serif;
+%font-h2 {
+    font-size:   1.6em;
+    font-weight: 600;
+    font-family: $ff-h2;
+}
+
+$ff-sub:   Lexend, system-ui, sans-serif;
+%font-sub {
+    font-size:   1.2em;
+    font-weight: 600;
+    font-family: $ff-sub;
+}
+
+$ff-footer:      Poppins, system-ui, sans-serif;
+%font-footer {
+    font-size:   0.75em;
+    font-weight: 400;
+    font-family: $ff-footer;
+}
+
+$ff-footer-head: Inter, system-ui, sans-serif;
+%font-footer-head {
+    font-size:   0.75em;
+    font-weight: 900;
+    font-family: $ff-footer-head;
+}
+
+body {
+    @extend %font-sans;
+    font-size: 1.25rem;
+    color: $cl-black;
+}
+
