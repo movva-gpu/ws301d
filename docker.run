@@ -2,17 +2,15 @@
 
 set -x
 
-cd $PWD/symfony
 composer install
 php bin/console sass:build
-cd ..
 
 docker stop    symfony-ws301d
 docker rm   -f symfony-ws301d
 docker run                         \
     --name symfony-ws301d          \
     --hostname symfony-ws301d      \
-    -v $PWD/symfony:/var/www/html  \
+    -v $PWD:/var/www/html  \
     -p 8301:80                     \
     -dti                           \
     shinsenter/symfony
