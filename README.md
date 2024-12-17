@@ -3,7 +3,7 @@
 ## Dépendances
 
 * `php8.x`
-* `nodejs`
+* `nodejs` (uniquement pour Sass)
 * `composer`
 
 Pour les installer sur Debian/Ubuntu:
