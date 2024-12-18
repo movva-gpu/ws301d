@@ -123,6 +123,88 @@ header {
     }
 }
 
+%footer-link {
+    color: $cl-white;
+    text-decoration: none;
+
+    &:hover { text-decoration: underline solid 2px currentColor; }
+}
+
+.footer {
+    @extend %font-footer;
+
+    display: flex;
+    align-items: top;
+    justify-content: space-around;
+
+    color: $cl-white;
+    background-color: $cl-black;
+
+    padding-block: 2em;
+
+    &__col {
+        &__title {
+            @extend %font-footer-head;
+
+            color: $cl-yellow;
+        }
+
+        &__item {
+            @extend %footer-link;
+
+            display: block;
+        }
+    }
+
+    &__network {
+        display: inline-block;
+        text-decoration: none;
+
+        & + & {
+            padding-left: 0.5em;
+        }
+    }
+
+    &__center {
+        &__logo {
+            svg {
+                height: 8em;
+            }
+        }
+
+        &__info {
+            text-align: center;
+
+            a {
+                @extend %footer-link;
+            }
+        }
+    }
+}
+
+/*a.icon-reseau {
+    display: inline-flex;
+}
+.mention {
+    color: #FFDD00;
+    margin: 0;
+}
+
+.infos-footer {
+    margin: 0;
+    font-size: small;
+    text-align: center;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.autre {
+    display: block;
+}
+*/
 @media screen and (width < 1600px) {
     .pimage {
         max-width: 90%;
