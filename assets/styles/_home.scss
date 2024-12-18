@@ -1,0 +1,36 @@
+.pimage:has(+ .avis) {
+    padding-bottom: 5em;
+}
+
+.avis {
+    @include grid-center;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: $cl-black;
+    color: white;
+    fill: white;
+    padding-inline: 4em;
+    padding-block: 2em;
+
+    &__col {
+        &__icon, &__num, &__leg {
+            display: block;
+            width: fit-content;
+            margin-inline: auto;
+            line-height: 1.5;
+        }
+
+        &__icon {
+            padding-bottom: 1em;
+        }
+
+        &__num {
+            font-family: Inter, system-ui, sans-serif;
+            font-weight: 900;
+            font-size: 2em;
+        }
+
+        &__leg {
+            display: block;
+        }
+    }
+}
