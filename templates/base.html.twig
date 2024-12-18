@@ -12,15 +12,15 @@
         {% endblock %}
     </head>
     <body>
-        <header>
+        <header class="header">
             <nav class="nav">
                 <div class="nav__logo">
-                    <a class="nav__logo__link" href="#accueil">
+                    <a class="nav__logo__link" href="{{ path('app_home') }}"">
                         {{ file_get_contents("../assets/logo.svg") | raw }}
                     </a>
                 </div>
                 <div class="nav__menu">
-                    <a class="nav__menu__link" href="#accueil">Accueil</a>
+                    <a class="nav__menu__link" href="{{ path('app_home') }}">Accueil</a>
                     <a class="nav__menu__link" href="#activites">Activités</a>
                     <a class="nav__menu__link" href="#offres">Offres</a>
                     <a class="nav__menu__link" href="#faq">F.A.Q.</a>
@@ -62,13 +62,13 @@
             </div>
             <div class="footer__col">
                 <p class="footer__col__title">Les box</p>
-                <a class="footer__col__item" href="activites.php">Nos activités</a>
-                <a class="footer__col__item" href="reserver.php">Réserver</a>
+                <a class="footer__col__item" href="#">Nos activités</a>
+                <a class="footer__col__item" href="{{ path('app_reservation') }}"">Réserver</a>
             </div>
             <div class="footer__col">
                 <p class="footer__col__title">Notre entreprise</p>
                 <a class="footer__col__item" href="#">&Agrave; propos</a>
-                <a class="footer__col__item" href="#">La FAQ</a>
+                <a class="footer__col__item" href="#">F.A.Q.</a>
             </div>
         </footer>
     </body>

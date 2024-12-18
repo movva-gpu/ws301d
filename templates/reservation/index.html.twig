@@ -1,0 +1,70 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Réservations - Escape Game Troyes{% endblock %}
+
+{% block body %}
+    <header class="resa-banner">
+        <h1 class="headline resa-banner__title">r&eacute;servez votre box d&egrave;s maintenant</h1>
+        <p class="resa-banner__desc">La quantité est ajustée au nombre de joueurs afin de vous offrir un apéro dînatoire copieux.
+            N’hésitez  pas nous indiquer les différentes restrictions alimentaires présentes  dans votre groupe
+            (femme enceinte, allergies, végétariens…)<br><br></p>
+        <p class="resa-banner__price">&Agrave; partir de 80&nbsp;€&nbsp;!</p>
+        <p class="resa-banner__learn-more" hidden>En savoir plus</p>
+    </header>
+
+    <div class="datepicker">
+        <button type="button" class="datepicker__arrow datepicker__arrow-l" id="left">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                <!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                <path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.2 288 416 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-306.7 0L214.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/>
+            </svg>
+        </button>
+        <div class="datepicker__wp">
+            <div class="datepicker__pic">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                    <!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                    <path d="M152 24c0-13.3-10.7-24-24-24s-24 10.7-24 24l0 40L64 64C28.7 64 0 92.7 0 128l0 16 0 48L0 448c0 35.3 28.7 64 64 64l320 0c35.3 0 64-28.7 64-64l0-256 0-48 0-16c0-35.3-28.7-64-64-64l-40 0 0-40c0-13.3-10.7-24-24-24s-24 10.7-24 24l0 40L152 64l0-40zM48 192l352 0 0 256c0 8.8-7.2 16-16 16L64 464c-8.8 0-16-7.2-16-16l0-256z"/>
+                </svg>
+            </div>
+            <input type="date" class="datepicker__datepicker" value="{{ "now" | date("Y-m-d") }}" min="{{ "now" | date("Y-m-01") }}" max="{{ "now" | date("Y-m-t") }}" required>
+            <span class="datepicker__invalid" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                    <!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                    <path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/>
+                </svg>
+            </span>
+        </div>
+        <button type="button" class="datepicker__arrow datepicker__arrow-r">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                <!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                <path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/>
+            </svg>
+        </button>
+    </div>
+
+    <div class="resa-boxes">
+    {%  for i in 0..3 %}
+        <div class="resa-boxes__box">
+            <img class="resa-boxes__box__img" src="https://placehold.co/256x300">
+            <h1>Lorem Ipsum</h1>
+            <p>Apéro ?</p>
+            <div class="resa-boxes__box__choices">
+                <label role="button">
+                    <span class="resa-boxes__box__choices__yes">Avec</span>
+                    <input type="checkbox" id="choice-{{ i }}" name="choice-{{ i }}" hidden>
+                    <span class="resa-boxes__box__choices__no">Sans</span>
+                </label>
+            </div>
+            <div class="resa-boxes__box__btns">
+                <button>Button 1</button>
+                <button>Button 2</button>
+                <button>Button 3</button>
+                <button>Button 4</button>
+            </div>
+            <button class="resa-boxes__box__addtocart">Je Réserve !</button>
+        </div>
+    {%  endfor %}
+    </div>
+</body>
+</html>
+{% endblock %}
