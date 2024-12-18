@@ -1,12 +1,14 @@
+@use 'sass:map';
+
 @mixin font-face-gen($fonts)
 {
     @each $font in $fonts
     {
         @font-face {
-            font-family: map-get($font, 'name');
-            src: local(map-get($font, 'name')), map-get($font, 'src');
-            font-weight: map-get($font, 'weight');
-            @if map-get($font, 'italic') {
+            font-family: map.get($font, 'name');
+            src: local(map.get($font, 'name')), map.get($font, 'src');
+            font-weight: map.get($font, 'weight');
+            @if map.get($font, 'italic') {
                 font-style: italic;
             }
             font-display: swap;

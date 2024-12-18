@@ -86,7 +86,7 @@ $fonts: (
 
 @include font-face-gen($fonts);
 
-$ff-sans:  Poppins, system-ui, sans-serif;
+$ff-sans: Poppins, system-ui, sans-serif;
 %font-sans {
     font-size:   1em;
     font-weight: 400;
@@ -98,37 +98,38 @@ $ff-intro: Inter, system-ui, sans-serif;
     font-size:   1.8em;
     font-weight: 900;
     font-family: $ff-intro;
+    text-transform: uppercase;
 }
 
-$ff-nav:   Inter, system-ui, sans-serif;
+$ff-nav: Inter, system-ui, sans-serif;
 %font-nav {
     font-size:   1.2em;
     font-weight: 900;
     font-family: $ff-nav;
 }
 
-$ff-h1:    Lexend, system-ui, sans-serif;
+$ff-h1: Lexend, system-ui, sans-serif;
 %font-h1 {
     font-size:   3.2em;
     font-weight: 600;
     font-family: $ff-h1;
 }
 
-$ff-h2:    Lexend, system-ui, sans-serif;
+$ff-h2: Lexend, system-ui, sans-serif;
 %font-h2 {
     font-size:   1.6em;
     font-weight: 600;
     font-family: $ff-h2;
 }
 
-$ff-sub:   Lexend, system-ui, sans-serif;
+$ff-sub: Lexend, system-ui, sans-serif;
 %font-sub {
     font-size:   1.2em;
     font-weight: 600;
     font-family: $ff-sub;
 }
 
-$ff-footer:      Poppins, system-ui, sans-serif;
+$ff-footer: Poppins, system-ui, sans-serif;
 %font-footer {
     font-size:   0.75em;
     font-weight: 400;
@@ -146,5 +147,22 @@ body {
     @extend %font-sans;
     font-size: 1.25rem;
     color: $cl-black;
+}
+
+.underline {
+    text-decoration: 2px solid underline currentColor;
+    text-underline-offset: 2px;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
 }
 
