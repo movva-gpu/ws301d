@@ -2,7 +2,7 @@ html {
     margin-top: 15em;
 }
 
-header {
+.header {
     @extend %font-nav;
 
     position: fixed;
@@ -18,6 +18,8 @@ header {
     background-color: $cl-black;
 
     padding: .8em 1.6em;
+
+    z-index: 1e9;
 
     .nav {
         position: relative;
@@ -182,29 +184,6 @@ header {
     }
 }
 
-/*a.icon-reseau {
-    display: inline-flex;
-}
-.mention {
-    color: #FFDD00;
-    margin: 0;
-}
-
-.infos-footer {
-    margin: 0;
-    font-size: small;
-    text-align: center;
-}
-
-a {
-    color: white;
-    text-decoration: none;
-}
-
-.autre {
-    display: block;
-}
-*/
 @media screen and (width < 1600px) {
     .pimage {
         max-width: 90%;
@@ -237,3 +216,5 @@ a {
 }
 
 @import '_home.scss';
+@import '_resa.scss';
+
