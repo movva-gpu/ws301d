@@ -9,10 +9,9 @@
     display: grid;
     align-items: center;
     grid-template-columns: 1fr 1fr;
-    gap: 1em;
-    
+
     margin-inline: auto;
-    max-width: 80%;
+    max-width: 70%;
 
     &__p {
         line-height: 1.5;
@@ -30,8 +29,13 @@
         object-fit: cover;
     }
 
+    &.pimage-l &__p {
+        padding-left: 2em;
+    }
+
     &.pimage-r {
         .pimage__p {
+            padding-right: 2em;
             grid-column: 1;
             grid-row: 1;
         }
@@ -63,6 +67,11 @@
     .pimage {
         display: block;
         max-width: calc(100% - 2em);
+
+        &__img {
+            display: block;
+            margin-bottom: 1em;
+        }
 
         &.pimage-l {
             .pimage__p, .pimage__img {
