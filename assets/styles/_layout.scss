@@ -1,3 +1,66 @@
+header {
+    @extend %font-nav;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: $cl-white;
+    background-color: $cl-black;
+
+    padding: .8em 1.6em;
+
+    .nav {
+        position: relative;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        width: 100%;
+
+        &__logo {
+            margin-right: auto;
+
+            &__link {
+                display: inline-block;
+                text-decoration: none;
+
+                svg {
+                    width: auto;
+                    height: 5em;
+                }
+            }
+        }
+
+        &__menu {
+            position: absolute;
+            inset: 0;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex: 1;
+            gap: 1.25em;
+
+            pointer-events: none;
+
+            &__link {
+                text-decoration: none;
+                text-transform: uppercase;
+
+                color: inherit;
+
+                pointer-events: auto;
+
+                &:hover {
+                    color: $cl-yellow;
+                }
+            }
+        }
+    }
+}
+
 .headline {
     @extend %font-intro;
     text-align: center;
@@ -83,4 +146,3 @@
 }
 
 @import '_home.scss';
-

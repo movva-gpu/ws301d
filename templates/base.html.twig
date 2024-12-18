@@ -12,6 +12,22 @@
         {% endblock %}
     </head>
     <body>
+        <header>
+            <nav class="nav">
+                <div class="nav__logo">
+                    <a class="nav__logo__link" href="#accueil">
+                        {{ file_get_contents("../assets/logo.svg") | raw }}
+                    </a>  
+                </div>   
+                <div class="nav__menu">
+                    <a class="nav__menu__link" href="#accueil">Accueil</a>
+                    <a class="nav__menu__link" href="#activites">Activités</a>
+                    <a class="nav__menu__link" href="#offres">Offres</a>
+                    <a class="nav__menu__link" href="#faq">F.A.Q.</a>
+                    <a class="nav__menu__link" href="#contact">Contact</a>
+                </div>
+            </nav>
+        </header>
         {% block body %}{% endblock %}
     </body>
 </html>
