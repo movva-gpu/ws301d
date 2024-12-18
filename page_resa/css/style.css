@@ -1,0 +1,107 @@
+body {
+  margin: 0;
+}
+body .banner {
+  padding-top: 50px;
+  height: 300px;
+  background-color: #ffdd00;
+  text-align: center;
+}
+body .banner #purple {
+  color: #8F3BC3;
+}
+body #datepicker {
+  display: flex;
+  height: 40px;
+  margin: 50px;
+  justify-content: center;
+}
+body #datepicker .arrow {
+  background-color: #ffdd00;
+  width: 40px;
+  height: 40px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.5s ease;
+}
+body #datepicker :active {
+  background-color: #ae9100;
+}
+body #datepicker #left {
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+body #datepicker #right {
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+body #start {
+  width: 400px;
+  text-align: center;
+  border: solid 1px;
+}
+
+#griddyDiddy {
+  display: grid;
+  margin: 200px;
+  gap: 200px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 950px);
+}
+#griddyDiddy .resa {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  border-radius: 20px;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+  background-color: rgb(255, 255, 255);
+  text-align: center;
+}
+#griddyDiddy .resa .illu {
+  width: 25vw;
+  min-height: 300px;
+  background-color: #c1c1c1;
+  margin: 60px auto;
+  border-radius: 10px;
+}
+#griddyDiddy .resa .griduNiggus {
+  display: grid;
+  grid-template-columns: repeat(2, 160px);
+  grid-template-rows: repeat(2, 60px);
+  grid-gap: 50px;
+  margin-block: 50px;
+}
+#griddyDiddy .resa .griduNiggus button {
+  padding: 10px;
+  font-size: 16px;
+  background-color: #ffdd00;
+  color: rgb(0, 0, 0);
+  border: none;
+  border-radius: 100px;
+  cursor: pointer;
+  transition: background-color 0.5s ease;
+  transition: transform 0.1s ease;
+}
+#griddyDiddy .resa .griduNiggus :active {
+  background-color: #ae9100;
+  transform: scale(0.95);
+}
+#griddyDiddy .resa .addtocart button {
+  padding: 20px;
+  width: 300px;
+  font-size: 16px;
+  background-color: #8F3BC3;
+  color: white;
+  border: none;
+  border-radius: 100px;
+  cursor: pointer;
+  transition: background-color 0.5s ease;
+  transition: transform 0.1s ease;
+}
+#griddyDiddy .resa .addtocart :active {
+  background-color: #552075;
+  transform: scale(0.95);
+}
+
+/*# sourceMappingURL=style.css.map */
