@@ -1,0 +1,170 @@
+body {
+  margin: 0;
+}
+body .banner {
+  padding-top: 50px;
+  height: 300px;
+  background-color: #ffdd00;
+  text-align: center;
+}
+body .banner #purple {
+  color: #8F3BC3;
+}
+body #datepicker {
+  display: flex;
+  height: 40px;
+  margin: 50px;
+  justify-content: center;
+}
+body #datepicker .arrow {
+  background-color: #ffdd00;
+  width: 40px;
+  height: 40px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.5s ease;
+}
+body #datepicker :active {
+  background-color: #ae9100;
+}
+body #datepicker #left {
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+body #datepicker #right {
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+body #start {
+  width: 400px;
+  text-align: center;
+  border: solid 1px;
+}
+body #griddyDiddy {
+  display: grid;
+  margin: 200px;
+  gap: 200px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 950px);
+}
+body #griddyDiddy .resa {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  border-radius: 20px;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+  background-color: rgb(255, 255, 255);
+  text-align: center;
+}
+body #griddyDiddy .resa .illu {
+  width: 25vw;
+  min-height: 300px;
+  background-color: #c1c1c1;
+  margin: 60px auto;
+  border-radius: 10px;
+}
+body #griddyDiddy .resa .griduNiggus {
+  display: grid;
+  grid-template-columns: repeat(2, 160px);
+  grid-template-rows: repeat(2, 60px);
+  grid-gap: 50px;
+  margin-block: 50px;
+}
+body #griddyDiddy .resa .griduNiggus button {
+  padding: 10px;
+  font-size: 16px;
+  background-color: #ffdd00;
+  color: rgb(0, 0, 0);
+  border: none;
+  border-radius: 100px;
+  cursor: pointer;
+  transition: background-color 0.5s ease;
+  transition: transform 0.1s ease;
+}
+body #griddyDiddy .resa .griduNiggus :active {
+  background-color: #ae9100;
+  transform: scale(0.95);
+}
+body #griddyDiddy .resa .addtocart button {
+  padding: 20px;
+  width: 300px;
+  font-size: 16px;
+  background-color: #8F3BC3;
+  color: white;
+  border: none;
+  border-radius: 100px;
+  cursor: pointer;
+  transition: background-color 0.5s ease;
+  transition: transform 0.1s ease;
+}
+body #griddyDiddy .resa .addtocart :active {
+  background-color: #552075;
+  transform: scale(0.95);
+}
+body .formulaire {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 100px;
+}
+body .formulaire .blocphoto {
+  width: 40vw;
+  height: 120vh;
+  background-color: #c1c1c1;
+}
+body .formulaire .form-container {
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+  width: 60vw;
+}
+body .formulaire .form-container .titre-form {
+  text-align: center;
+}
+body .formulaire .form-container .form-nom-prenom, body .formulaire .form-container .form-tel-email, body .formulaire .form-container .form-message, body .formulaire .form-container .form-objet, body .formulaire .form-container .submit-btn, body .formulaire .form-container .info {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+  gap: 40px;
+}
+body .formulaire .form-container .sub-message, body .formulaire .form-container .sub-objet {
+  display: flex;
+  flex-direction: column;
+  width: calc(40vw + 40px);
+}
+body .formulaire .form-container .form-nom, body .formulaire .form-container .form-prenom, body .formulaire .form-container .form-tel, body .formulaire .form-container .form-email {
+  display: flex;
+  flex-direction: column;
+  width: 20vw;
+}
+body .formulaire .form-container #nom, body .formulaire .form-container #prenom, body .formulaire .form-container #tel, body .formulaire .form-container #email, body .formulaire .form-container #objet {
+  height: 40px;
+  margin-block: 20px;
+  padding: 10px;
+  border-radius: 10px;
+  border: solid 1px;
+}
+body .formulaire .form-container #message {
+  height: 200px;
+  margin-block: 20px;
+  padding: 20px;
+  border-radius: 10px;
+}
+body .formulaire .form-container .submit-btn button {
+  margin-bottom: 50px;
+  padding: 30px;
+  width: 12vw;
+  background-color: #ffdd00;
+  color: rgb(0, 0, 0);
+  border: none;
+  border-radius: 100px;
+  cursor: pointer;
+  transition: background-color 0.5s ease;
+  transition: transform 0.1s ease;
+}
+body .formulaire .form-container .submit-btn :active {
+  background-color: #ae9100;
+  transform: scale(0.95);
+}
+
+/*# sourceMappingURL=style.css.map */
