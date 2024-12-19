@@ -1,0 +1,53 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Contact - Escape Ap&eacute;ro Troyes{% endblock %}
+
+{% block body %}
+    <div class="formulaire">
+        <img src="/form.webp" class="blocphoto">
+        <div class="form-container">
+            <h1 class="headline titre-form">UNE QUESTION ? UN AVIS ?<br>POUR NOUS LE DIRE, C'EST PAR ICI !</h1>
+            <form>
+                <div class="form-nom-prenom">
+                    <div class="form-nom">
+                        <label title="Champ obligatoire" for="nom">Nom <span class="star">*</span></label>
+                        <input title="Champ obligatoire" type="text" id="nom" placeholder="Doe" required>
+                    </div>
+                    <div class="form-prenom">
+                        <label title="Champ obligatoire" for="prenom">Prénom <span class="star">*</span></label>
+                        <input title="Champ obligatoire" type="text" id="prenom" placeholder="John" required>
+                    </div>
+                </div>
+                <div class="form-tel-email">
+                    <div class="form-tel">
+                        <label for="tel">Téléphone</label>
+                        <input type="tel" id="tel" placeholder="06 00 00 00 00">
+                    </div>
+                    <div class="form-email">
+                        <label title="Champ obligatoire" for="email">E-mail <span class="star">*</span></label>
+                        <input title="Champ obligatoire" type="email" id="email" placeholder="johndoe@mail.fr" required>
+                    </div>
+                </div>
+                <div class="form-objet">
+                    <div class="sub-objet">
+                        <label title="Champ obligatoire" for="objet">Objet <span class="star">*</span></label>
+                        <select title="Champ obligatoire" id="objet" required>
+                            <option value="" disabled selected>Veuillez sélectionner la raison de votre contact</option>
+                            <option value="avis">Avis</option>
+                            <option value="question">Question</option>
+                            <option value="autre">Autre (précisez dans le mail)</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-message">
+                    <div class="sub-message">
+                        <label title="Champ obligatoire" for="message">Message <span class="star">*</span></label>
+                        <textarea title="Champ obligatoire" id="message" placeholder="Votre message..." required></textarea>
+                    </div>
+                </div>
+                <div class="submit-btn"><button type="submit">ENVOYER !</button></div>
+                <p class="info"><span class="star">*</span> Champs obligatoire</p>
+            </form>
+        </div>
+    </div>
+{% endblock %}
