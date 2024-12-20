@@ -43,10 +43,12 @@
     </div>
 
     <div class="resa-boxes">
-    {%  for i in 0..3 %}
+    {% set boxes = [{'name': 'Box Recrutement', 'img': 'business-people-office-break.jpg'}, {'name': 'Box Infiltration', 'img': 'side-view-man-planning-hacker-attack-dark-room-man-writing-wall-with-stickers-photographs-red-threads-planning-conspiracy-hacking-concept.jpg'}, {'name': 'Le trésor de Black Sam', 'img': 'black-sam.webp'}, {'name': 'Murder Party', 'img': 'truc.jpg'}] %}
+    {% set i = 0 %}
+    {% for box in boxes %}
         <div class="resa-boxes__box">
-            <img class="resa-boxes__box__img" src="https://placehold.co/256x300">
-            <h1>Lorem Ipsum</h1>
+            <img class="resa-boxes__box__img" src="{{ box.img ?? "https://placehold.co/256x300" }}">
+            <h1>{{ box.name }}</h1>
             <p>Apéro ?</p>
             <div class="resa-boxes__box__choices">
                 <label role="button">
@@ -56,13 +58,12 @@
                 </label>
             </div>
             <div class="resa-boxes__box__btns">
-                <button>Button 1</button>
-                <button>Button 2</button>
-                <button>Button 3</button>
-                <button>Button 4</button>
+                <button type="button">11:30</button>
+                <button type="button">18:30</button>
             </div>
             <button class="resa-boxes__box__addtocart">Je Réserve !</button>
         </div>
+        {% set i = i + 1 %}
     {%  endfor %}
     </div>
 </body>
