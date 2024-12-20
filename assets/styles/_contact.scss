@@ -1,0 +1,100 @@
+@use 'sass:color';
+
+$gap: 40px;
+
+.formulaire {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5em;
+
+    .blocphoto {
+        width: auto;
+        height: 120vh;
+        background-color: #c1c1c1;
+    }
+
+    .form-container {
+        display: flex;
+        flex-direction: column;
+        padding: 40px;
+        width: 60vw;
+
+        .titre-form {
+            text-align: center;
+            padding-bottom: 1em;
+        }
+
+        input, button, select, textarea {
+            @extend %font-sans;
+        }
+
+        label {
+            @extend %font-sub;
+            font-size: 1em;
+        }
+        .star {
+            color: color.adjust(red, $lightness: -10%);
+        }
+
+        .form-nom-prenom, .form-tel-email, .form-message, .form-objet, .submit-btn, {
+            display: flex;
+            justify-content: center;
+            margin: 20px;
+            gap: $gap;
+        }
+
+        .sub-message, .sub-objet {
+            display: flex;
+            flex-direction: column;
+            width: calc(40vw + $gap);
+        }
+
+        .form-nom, .form-prenom, .form-tel, .form-email {
+            display: flex;
+            flex-direction: column;
+            width: 20vw;
+        }
+
+        #nom, #prenom, #tel, #email, #objet {
+            margin-block: 20px;
+            padding: 0.5em 0.8em;
+            border-radius: 10px;
+            border: solid 1px;
+        }
+
+        #message {
+            height: 200px;
+            margin-block: 20px;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .submit-btn {
+            button {
+                @extend %font-nav;
+                margin-bottom: 50px;
+                padding: .5em 1.8em;
+                background-color: $cl-yellow;
+                color: rgb(0, 0, 0);
+                border: none;
+                border-radius: 100px;
+                cursor: pointer;
+                transition-property: background-color, color, transform ease;
+                transition-duration: 100ms;
+
+                &:hover {
+                    background-color: $cl-purple;
+                    color: $cl-white;
+                }
+
+                &:active {
+                    background-color: color.adjust($cl-purple, $lightness: -15%);
+                    color: $cl-white;
+                    transform: scale(0.95);
+                }
+            }
+
+        }
+
+    }
+}

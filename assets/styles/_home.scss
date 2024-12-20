@@ -1,3 +1,5 @@
+@use 'sass:color';
+
 .pimage:has(+ .avis) {
     padding-bottom: 5em;
 }
@@ -5,7 +7,7 @@
 .avis {
     @include grid-center;
     grid-template-columns: repeat(3, 1fr);
-    background-color: $cl-black;
+    background-color: color.adjust($cl-black, $lightness: -2%);
     color: white;
     fill: white;
     padding-inline: 4em;
