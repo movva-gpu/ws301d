@@ -1,0 +1,153 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello ActiviteController!{% endblock %}
+
+{% block body %}
+    <h1 class="acti-title">
+        VOUS CHERCHEZ UN BON MOYEN DE FAIRE PÉTILLER VOS SOIRÉES ?
+        <br>
+        <span class="purple">ON EST LA !</span>
+    </h1>
+    <div class="parts">
+        <div class="linkBoxApero">
+            <p>Box apéro</p>
+            <div class="round">
+                <svg height="32" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                    <!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                    <path d="M32 64c0-17.7 14.3-32 32-32l288 0c17.7 0 32 14.3 32 32l0 32 51.2 0c42.4 0 76.8 34.4 76.8 76.8l0 102.1c0 30.4-17.9 57.9-45.6 70.2L384 381.7l0 34.3c0 35.3-28.7 64-64 64L96 480c-35.3 0-64-28.7-64-64L32 64zM384 311.6l56.4-25.1c4.6-2.1 7.6-6.6 7.6-11.7l0-102.1c0-7.1-5.7-12.8-12.8-12.8L384 160l0 151.6zM160 144c0-8.8-7.2-16-16-16s-16 7.2-16 16l0 224c0 8.8 7.2 16 16 16s16-7.2 16-16l0-224zm64 0c0-8.8-7.2-16-16-16s-16 7.2-16 16l0 224c0 8.8 7.2 16 16 16s16-7.2 16-16l0-224zm64 0c0-8.8-7.2-16-16-16s-16 7.2-16 16l0 224c0 8.8 7.2 16 16 16s16-7.2 16-16l0-224z" fill="#ffdd00" />
+                </svg>
+            </div>
+        </div>
+
+        <div class="linkBlackSam">
+            <p>Trésor de Black Sam</p>
+            <div class="round">
+                <svg height="32" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                    <!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                    <path d="M408 120c0 54.6-73.1 151.9-105.2 192c-7.7 9.6-22 9.6-29.6 0C241.1 271.9 168 174.6 168 120C168 53.7 221.7 0 288 0s120 53.7 120 120zm8 80.4c3.5-6.9 6.7-13.8 9.6-20.6c.5-1.2 1-2.5 1.5-3.7l116-46.4C558.9 123.4 576 135 576 152l0 270.8c0 9.8-6 18.6-15.1 22.3L416 503l0-302.6zM137.6 138.3c2.4 14.1 7.2 28.3 12.8 41.5c2.9 6.8 6.1 13.7 9.6 20.6l0 251.4L32.9 502.7C17.1 509 0 497.4 0 480.4L0 209.6c0-9.8 6-18.6 15.1-22.3l122.6-49zM327.8 332c13.9-17.4 35.7-45.7 56.2-77l0 249.3L192 449.4 192 255c20.5 31.3 42.3 59.6 56.2 77c20.5 25.6 59.1 25.6 79.6 0zM288 152a40 40 0 1 0 0-80 40 40 0 1 0 0 80z" fill="#ffdd00" />
+                </svg>
+            </div>
+        </div>
+
+        <div class="linkMurderParty">
+            <p>Murder party</p>
+            <div class="round">
+                <svg height="32" viewBox="0 0 38 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M31.68 1.80002L26.56 3.84002L21.2 9.20002L15.88 14.52L14.8 13.64C13.44 12.6 12.16 12.56 11.28 13.52C10.36 14.52 10.44 16.12 11.4 17C12.24 17.76 12.2 17.8 6.88003 23.16C1.08003 29 0.360026 30 0.960026 31.12C1.48003 32.12 6.04003 36.4 6.60003 36.4C7.08003 36.4 11 32.88 15.76 28.12L19.12 24.76L19.96 25.52C21.28 26.72 22.36 26.92 23.4 26.08C24.56 25.16 24.56 23.4 23.44 22.28L22.6 21.44L28.56 15.4C34.88 9.00002 36.4 6.80002 37 3.08002C37.56 -0.519978 37.48 -0.519978 31.68 1.80002ZM34.24 6.16002C33.32 8.04002 31.68 9.92002 27.2 14.4L21.4 20.2L20.52 19.28L19.64 18.4L25.48 12.52C30.08 7.84002 31.44 6.24002 31.8 4.92002C32.2 3.56002 32.56 3.16002 33.76 2.72002C35.08 2.20002 35.2 2.20002 35.32 2.92002C35.4 3.36002 34.92 4.80002 34.24 6.16002ZM18.12 19.32C22 23.2 22.92 24.32 22.52 24.72C22.12 25.12 21 24.2 17.12 20.32C12.48 15.68 11.52 14.4 12.72 14.4C13 14.4 15.4 16.6 18.12 19.32ZM13.8 24.04C13.8 24.52 12.64 25 12.32 24.68C12.2 24.52 12.2 24.16 12.32 23.84C12.56 23.2 13.8 23.4 13.8 24.04ZM8.44003 28.84C8.84003 29.52 7.92003 30.28 7.36003 29.72C6.88003 29.24 7.20003 28.4 7.80003 28.4C8.00003 28.4 8.28003 28.6 8.44003 28.84Z" fill="#FFDD00"/>
+                </svg>
+            </div>
+        </div>
+    </div>
+    <div class="boxApero">
+        <h1>Nos box apéro</h1>
+
+        <div class="recrutement">
+            <div class="placeholder"></div>
+            <div class="information">
+                <p class="textrecru">Un groupe de crapules, les Trouble-Fêtes, sévit dans la région. Incapable de profiter de la vie et des moments entre amis, leur devise est simple : « A bas l’apéro ! ».
+                Sacrilège pour le F.L.A.P, front de libération de l’apéro, qui n’a qu’une mission : protéger la gastronomie française à travers son activité la plus populaire : l’apéro.</p>
+                <div class="submit-btn"><button>RÉSERVE TA BOX !</button></div>
+            </div>
+        </div>
+
+        <div class="infiltration">
+            <div class="information">
+                <p class="textinfi">Le F.L.A.P à encore une mission pour toi et tes coéquipiers.
+                    Les trouble-fêtes continuent de semer le trouble et pour leur prochaine opération coup de poing, ils prévoient de saboter la fête de la bière à Munich.
+                    Tu devras infiltrer les troupes ennemies afin de déjouer leur plan. Les Trouble-Fêtes te demanderont alors de les aider à faire échouer l’Oktoberfest mais en véritable agent double tu devras tout faire pour les faire échouer et ainsi sauver la fête de la bière.</p>
+                <div class="submit-btn"><button>RÉSERVE TA BOX !</button></div>
+            </div>
+            <div class="placeholder"></div>
+            
+        </div>
+    </div>
+    <div class="blacksam">
+        <h1>Le trésor de Black Sam</h1>
+        <div class="illublacksam"></div>
+        <p class="textblacksam">Connaissez-vous
+            l’histoire vraie de Samuel Bellamy alias Black Sam,
+            surnommé Prince des Pirates. Il captura plus de 50 navires.
+            Sa disparition lors d’une tempête en 1717 au large du Cap Cod,
+            alors qu’il transportait des trésors de 53 navires, contribua à légende.
+            Il est considéré comme le pirate le plus fortuné de l’histoire.
+            Un des coffres du célèbre pirate a été retrouvé caché au fond d’une grotte.
+            Malheureusement, personne n’a réussi à le déverrouiller et résoudre son mystère.
+            Que renferme ce mystérieux coffre ? Que contient-il ? À vous de constituer
+            votre équipe et de percer ses secrets.</p>
+        <div class="submit-btn"><button>RÉSERVE TA BOX !</button></div>
+        <p class="expliblacksam">Un coffre escape game transportable directement dans votre salon.
+            Avec le coffre, nous fournissons son livret des solutions. Simple et explicite, il vous permet de trouver la réponse d’une énigme sans dévoiler les autres et de continuer le jeu.
+            Le temps de jeu dure en moyenne entre 1h et 1 h 30 environ. Vous disposez du coffre pour une durée largement supérieure et suivant nos disponibilités, vous pourrez garder le coffre un après-midi ou une soirée.</p>
+    </div>    
+    <div class="murderparty cascade">
+        <h1>Les “Murder party”</h1>
+        <div class="cascadeLeft cascade-col">
+            <div>
+                <img width="250" class"image" src="/poster-drame-chicago-1500x2000-1-high.webp">
+                <h2>Drame à Chicago</h2>
+                <p>Un scénario sur le thème Prohibition pour 15-22 personnes
+                    La soirée de Gala au cabaret “Le speakeasy” tourne au drame...
+                    </p>
+                <div class="submit-btn"><button>RÉSERVE TA BOX !</button></div>
+            </div>
+            <div>
+                <img width="250" class"image" src="/poster-r-union-mortelle-high.webp">
+                <h2>Réunion Mortelle</h2>
+                <p>Un scénario pour 6-9 joueurs débutants
+                    15 ans après le bac, des anciens lycéens se retrouvent dans une soirée
+                    de gala...</p>
+                <div class="submit-btn"><button>RÉSERVE TA BOX !</button></div>
+            </div>
+            <div>
+                <img width="250" class"image" src="/sup-carr-standard.webp">
+                <h2>Les Super-Héros</h2>
+                <p>Un scénario sur le thème Futuriste pour 10-13 personnes
+                    Les Super-Héros sont bloqués sur leur base...</p>
+                <div class="submit-btn"><button>RÉSERVE TA BOX !</button></div>
+            </div>
+            
+        </div>
+
+        <div class="cascadeCenter cascade-col">
+            <div>
+                <img width="250" class"image" src="/poster-l-ecole-des-sorci-res-1500x2000-high.webp">
+                <h2>L'École des Socières</h2>
+                <p>Un scénario sur le thème Poudlard pour 14-20 personnes
+                    une école de sorcières est dans la tourmente</p>
+                <div class="submit-btn"><button>RÉSERVE TA BOX !</button></div>
+            </div>
+            <div>
+                <img width="250" class"image" src="/par-poster-panique-au-restaurant-high.webp">
+                <h2>Panique au restaurant</h2>
+                <p>Un scénario sur le thème Restaurant pour 13-18 personnes
+                    Le chef-cuisinier a été assassiné
+                    </p>
+                <div class="submit-btn"><button>RÉSERVE TA BOX !</button></div>
+            </div>
+        </div>
+
+        <div class="cascadeRight cascade-col">
+            <div>
+                <img width="250" class"image" src="/m-m-poster-high.webp">
+                <h2>Meurtres & Muscats</h2>
+                <p>Un scénario sur le thème Viticole pour 10-26 personnes
+                    Meurtre lors d'une dégustation de vin...</p>
+                <div class="submit-btn"><button>RÉSERVE TA BOX !</button></div>
+            </div>
+            <div>
+                <img width="250" class"image" src="/crime-et-chat-iment-standard.webp">
+                <h2>Crime et <i>Chat</i>iment</h2>
+                <p>Un scénario pour 10-13 personnes
+                    Les péripéties diverses du concours de l’élection du plus beau chat du Monde
+                    </p>
+                <div class="submit-btn"><button>RÉSERVE TA BOX !</button></div>
+            </div>
+        </div>
+
+    </div>    
+    <div class="offres" hidden style="display: none;">
+        <h1>DÉCOUVREZ AUSSI NOS OFFRES DU MOMENT</h1>
+        <div class="illuoffres"></div>
+        <div class="submit-btn"><button>DECOUVRE NOS OFFRES</button></div>
+    </div>
+{% endblock %}
