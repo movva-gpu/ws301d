@@ -21,10 +21,10 @@
                 </div>
                 <div class="nav__menu">
                     <a class="nav__menu__link" href="{{ path('app_home') }}">Accueil</a>
-                    <a class="nav__menu__link" href="#activites">Activités</a>
+                    <a class="nav__menu__link" href="{{ path('app_activite') }}">Activités</a>
                     <a class="nav__menu__link" href="#offres">Offres</a>
                     <a class="nav__menu__link" href="#faq">F.A.Q.</a>
-                    <a class="nav__menu__link" href="#contact">Contact</a>
+                    <a class="nav__menu__link" href="{{ path('app_contact') }}">Contact</a>
                 </div>
             </nav>
         </header>
@@ -62,12 +62,13 @@
             </div>
             <div class="footer__col">
                 <p class="footer__col__title">Les box</p>
-                <a class="footer__col__item" href="#">Nos activités</a>
+                <a class="footer__col__item" href="{{ path('app_activite') }}">Nos activités</a>
                 <a class="footer__col__item" href="{{ path('app_reservation') }}"">Réserver</a>
             </div>
             <div class="footer__col">
                 <p class="footer__col__title">Notre entreprise</p>
                 <a class="footer__col__item" href="#">&Agrave; propos</a>
+                <a class="footer__col__item" href="{{ path('app_activite') }}">Nous contacter</a>
                 <a class="footer__col__item" href="#">F.A.Q.</a>
             </div>
         </footer>
