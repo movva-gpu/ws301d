@@ -190,6 +190,12 @@
         width: min-content;
         min-width: 40ch;
 
+        h1 {
+            @extend %font-h2;
+            font-size: 1.1em;
+            padding-bottom: 1em;
+        }
+
         &__img {
             background-color: #c1c1c1;
             margin: 1.33em;
